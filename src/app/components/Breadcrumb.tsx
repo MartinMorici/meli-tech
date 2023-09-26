@@ -5,8 +5,9 @@ interface Props {
 }
 
 export function Breadcrumb({ categories }: Props) {
+  
   return (
-    <aside className='max-w-7xl w-full mx-auto text-sm px-4 py-4'>
+    <aside className='max-w-7xl w-full mx-auto text-sm py-4'>
       {categories.map((cat, index) => (
         <span className='text-[rgb(102_102_102)]' key={cat}>
           {cat}

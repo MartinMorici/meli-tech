@@ -2,7 +2,7 @@ import React from 'react';
 
 const Buscador = () => {
   return (
-    <nav className='bg-[#fff159] w-full p-4 flex gap-8 justify-center items-center'>
+    <nav className='max-w-7xl mx-auto bg-[#fff159] w-full py-4 flex gap-8  justify-between items-center'>
       <svg
         className='w-11 text-blue-500'
         aria-hidden='true'
@@ -19,7 +19,7 @@ const Buscador = () => {
         />
       </svg>
       <form
-        className='justify-center flex-grow flex max-w-5xl items-center '
+        className='justify-center flex-grow flex items-center bg-slate-300 '
         action='/items'
       >
         <input

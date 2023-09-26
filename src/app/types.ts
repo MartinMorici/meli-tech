@@ -1,6 +1,11 @@
 export type Item = {
   id: string;
   title: string;
+  currency_id?: string;
+  thumbnail_id?: string;
+  shipping?: {
+    free_shipping?: boolean;
+  };
   price: {
     currency: string;
     amount: number;
@@ -8,7 +13,9 @@ export type Item = {
   };
   picture: string;
   condition: string;
-  free_shipping: boolean;
+  sold_quantity: number;
+  free_shipping?: boolean;
+  description: string | null;
 };
 
 export type Author = {
@@ -16,8 +23,13 @@ export type Author = {
   lastname: string;
 };
 
-export type SearchResult = {
+export type Products = {
   author: Author;
   categories: string[];
   items: Item[];
+};
+
+export type Product = {
+  author: Author;
+  item : Item
 };
